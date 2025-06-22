@@ -5,34 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <form method="post">
-       <label for="name">Name</label>
-        <input type="text" id="name" placeholder="Name" required>
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="Email" required>
-        <label for="gender_m, gender_f">Gender</label>
-        <input type="radio" id="gender_m" required>
-        <label for="gender_m">Male</label>
-        <input type="radio" id="gender_f" required>
-        <label for="gender_f">Female</label>
-        <label for="cars">Car Brands</label>
-        <!-- <input type="Select" id="cars" placeholder="--Please choose an option--" required > -->
-        <select id="cars" aria-placeholder="--Please choose an option--">
-            <option value="suv">suv</option>
-            <option value="thar">thar</option>
-        </select>
-        <label for="age">Age</label>
-        <input type="Number" id="age" placeholder="age" required>
-        <label for="dob">DOB</label>
-        <input type="date" id="dob" placeholder="DOB" required>
-        <label for="tel">Telephone</label>
-        <input type="tel" id="tel" placeholder="xxx-xxx-xxxx">
-        <label for="password">Password</label>
-        <input type="password"  id="password" required placeholder="password">
-        <label for="tos">I agree to the TOS	</label>
-        <input type="Checkbox"  id="tos" required>
-        <button>submit</button>
-    </form>
+	<body>
+<form method="post">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Email" required>
+
+    <label>Gender</label>
+    <input type="radio" id="gender_m" name="gender" value="male" required>
+    <label for="gender_m">Male</label>
+    <input type="radio" id="gender_f" name="gender" value="female" required>
+    <label for="gender_f">Female</label>
+
+    <label for="cars">Car Brands</label>
+    <select id="cars" name="cars" required>
+        <option value="">--Please choose an option--</option>
+        <option value="suv">SUV</option>
+        <option value="thar">Thar</option>
+    </select>
+
+    <label for="age">Age</label>
+    <input type="number" id="age" name="age" placeholder="Age" required>
+
+    <label for="dob">DOB</label>
+    <input type="date" id="dob" name="dob" required>
+
+    <label for="tel">Telephone</label>
+    <input type="tel" id="tel" name="tel" placeholder="xxx-xxx-xxxx">
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" placeholder="Password" required>
+
+    <label for="tos">
+        <input type="checkbox" id="tos" name="tos" required> I agree to the TOS
+    </label>
+
+    <button type="submit">Submit</button>
+</form>
+
 </body>
 </html>
