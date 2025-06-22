@@ -14,7 +14,11 @@
         <label for="gender_m, gender_f">Gender</label>
         <input type="radio" id="gender_m, gender_f" required>
         <label for="cars">Car Brands</label>
-        <input type="Select" id="cars" placeholder="--Please choose an option--" required>
+        <!-- <input type="Select" id="cars" placeholder="--Please choose an option--" required > -->
+        <select id="cars" aria-placeholder="--Please choose an option--">
+            <option value="suv">suv</option>
+            <option value="thar">thar</option>
+        </select>
         <label for="age">Age</label>
         <input type="Number" id="age" placeholder="age" required>
         <label for="dob">DOB</label>
